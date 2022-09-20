@@ -1,0 +1,253 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css);
+body{
+
+    font-family: 'Roboto', sans-serif;
+    background-color: gainsboro;
+}
+
+nav, .dnone{
+    display: none;
+}
+
+.fa-bars{
+    margin: 16px;
+    color: white;
+
+}
+
+.flex-icon{
+    display: flex;
+    justify-content: start;
+}
+
+.flex-icon p{
+    color: white;
+}
+
+.fa-car{
+    margin: 16px;
+    color: white;
+}
+
+.nav-mobile{
+    display: flex;
+    justify-content: space-between;
+    background-color: #41559E;
+}
+
+
+.order{
+    text-align: center;
+    background-color: gainsboro;
+    padding-bottom: 1em;
+}
+
+.order p{
+    margin: 0px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+}
+
+.order-flex{
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px gray;
+    border-radius: 5px;
+    background-color:  white;
+    margin-left: 36%;
+    margin-right: 36%;
+    object-fit: fill;
+    
+    
+}
+
+.order-flex i{
+    margin: 1em;
+}
+
+.list-products{
+    text-align: center;
+    background-color: white;
+}
+
+.card img{
+    border: solid 1px gainsboro;
+    box-shadow: 0 2px 2px gainsboro;
+    max-width: 100%;
+}
+
+.card{
+    padding-top: 2em;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card p{
+    margin-bottom: 0px;
+}
+
+.btn{
+    background-color: #41559E;
+    color: white;
+    border-radius: 3px;
+    padding: 7px 0 7px 0;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    
+}
+
+.filter{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: #41559E;
+}
+
+.filter p{
+    padding-left: 1em;
+}
+
+footer{
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #41559E;
+    color: white;
+}
+
+footer i{
+    font-size: 25px;
+    margin: 5px;
+}
+
+@media (min-width:576px){
+    
+
+    nav, .none{
+        display: block;
+    }
+
+    .nav-mobile{
+        display: none;
+    }
+
+    .flex-car{
+        display: flex;
+        justify-content: start;
+    }
+
+    .flex-option{
+        display: flex;
+        gap: 10px;
+        padding-right: 3rem;
+    }
+    
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        background-color: #41559E;
+        color: white;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-areas: 
+        "order list-products list-products"
+        "order filter filter"
+        ; 
+    }
+
+    .order, .order-flex{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .order-flex{
+        display: flex;
+        flex-direction: row;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        gap: 50px;
+    }
+
+    .card img{
+        border: solid 1px gainsboro;
+        box-shadow: 0 2px 2px gainsboro;
+        max-width: 80%;
+        object-fit: fill;
+    }
+    
+    .list-products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    
+    }
+
+    .card{
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    }
+
+    .btn{
+        text-align: center;
+        margin: 0;
+        width: 40%;
+    }
+
+    @media (min-width:992px){
+        .grid-desktop{
+            display: grid;
+            grid-template-areas: 
+            "navbar order order order order"
+            "footer list-products list-products list-products list-products"
+            "footer filter filter filter filter"
+            ; 
+        }
+
+        .navbar, .flex-option{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+        }
+        
+        .navbar{
+            padding-right: 2rem;
+        }
+
+        .flex-option p{
+            margin: 0;
+        }
+
+        .flex-option{
+            padding-left: 5rem;
+        }
+
+        .card{
+            width: 30%;
+            height: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .list-products{
+            padding-left: 6rem;
+        }
+
+
+    }
+
+
